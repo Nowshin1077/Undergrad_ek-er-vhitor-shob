@@ -1,0 +1,205 @@
+                                           Lab-4
+                                   --------------------
+
+
+---------------------
+Box class:
+---------------------
+
+
+//Constructor Overloading.                  
+
+package basicClass;
+
+public class Box {
+    double height;
+    double weight;
+    double depth;
+    
+    Box(){
+        
+        System.out.println("Constructor without any parameter is calling....");
+        height = weight = depth = 0;
+    }
+	
+    Box(double height, double weight, double depth){
+        
+        System.out.println("Constructor with 3 parameter is calling....");
+        this.height = height;
+        this.weight = weight;
+        this.depth = depth;
+    }
+
+    Box(double height, double weight){
+        
+        System.out.println("Constructor with 2 parameter is calling....");
+        this.height = height;
+        this.weight = weight;
+   
+    }
+    
+    
+    
+    void printClassInfo(){
+        System.out.println("Printing from Box class");
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public void setDepth(double depth) {
+        this.depth = depth;
+    }
+    
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public double getDepth() {
+        return depth;
+    }
+    double volume(){
+        return height * weight * depth;
+    }
+    
+}
+
+
+
+
+
+-----------------------------
+Main Class:
+-----------------------------
+
+
+package basicClass;
+
+import java.util.Scanner;
+
+public class ClassMain {
+    
+    public static void main(String args[]){
+             
+        System.out.println("Printing from main class.....");
+        Box rec = new Box();
+        rec.printClassInfo();
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Enter Height: ");
+        rec.setHeight(scn.nextDouble());
+        System.out.println("Enter Weight: ");
+        rec.setWeight(scn.nextDouble());
+        System.out.println("Enter Depth: ");
+        rec.setDepth(scn.nextDouble());
+        System.out.println("Rectangle Volume is "+rec.volume());
+        
+    
+    
+    }
+    
+    
+}
+
+
+                                          Lab-5 work
+                                 --------------------------
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Bank;
+
+/**
+ *
+ * @author Syeda Nowshin Ibnat
+ */
+public class Lab5work {
+    public static void main(String[] args) {
+    // TODO Auto-generated method stub
+
+Account acc = new Account(201, 21000, .075);
+acc.withdraw(2000);
+acc.deposit(3300);
+System.out.println("Account ID:" + acc.id);
+System.out.println("Balance:" + acc.getBalance());
+System.out.println("Interest Rate:" + acc.getAnnualInterestRate());
+System.out.println("Balance after withdraw of 2000:" +       acc.getAnnualInterestRate());
+System.out.println("Balance after deposit of 3300:" + acc.getAnnualInterestRate());
+System.out.println("Monthly Interest:" + acc.id);
+
+System.out.println("Process completed.");
+}
+
+class Account {
+    
+private int id;
+private double balance; 
+private double annualInterestRate; 
+
+
+
+Account () {
+    id = 0;
+    balance = 0.0;
+    annualInterestRate = 0.0;
+}
+
+Account(int newId, double newBalance) {
+    id = newId;
+    balance = newBalance;
+}
+Account(int newId, double newBalance, double newAnnualInterestRate) {
+    id = newId;
+    balance = newBalance;
+    annualInterestRate = newAnnualInterestRate;
+}
+
+public int getId() {
+    return id;
+}
+public double getBalance() {
+    return balance;
+}
+public double getAnnualInterestRate() {
+    return annualInterestRate;
+}
+public void setId(int newId) {
+    id = newId;
+}
+public void setBalance(double newBalance) {
+    balance = newBalance;
+}
+public void setAnnualInterestRate(double newAnnualInterestRate) {
+    annualInterestRate = newAnnualInterestRate;
+}
+
+
+double getMonthlyInterestRate() {
+    return annualInterestRate/12;
+}
+
+double withdraw(double amount) {
+    return balance -= amount;
+}   
+
+double deposit(double amount) {
+    return balance += amount;   
+}
+}
+
+}
+
+
+

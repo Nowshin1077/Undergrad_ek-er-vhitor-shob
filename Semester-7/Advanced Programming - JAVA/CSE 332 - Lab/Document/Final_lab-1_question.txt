@@ -1,0 +1,12 @@
+life time ---> method
+
+class-1 (life time value set) thread ---> Increase 1 by 1 
+
+***Use while loop to do the work (ex:10 times)
+
+class-2  (life time value bring) thread ---> Decrease 1 by 1
+
+Do it-->
+1) with syncronization
+2) without syncronization
+

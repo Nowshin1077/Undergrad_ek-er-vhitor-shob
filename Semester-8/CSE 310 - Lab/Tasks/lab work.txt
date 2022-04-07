@@ -1,0 +1,4 @@
+Write down a shell script program that implements the SJF scheduling algorithm for non-preemptive
+.Your program will take n number processes as input having arrival time and burst time
+produces the turnaround time and waiting time. Finally
+calculate the average waiting time and average turnaround time and average response time.

@@ -1,0 +1,20 @@
+.MODEL SMALL
+.STACK 100H 
+
+.CODE
+MAIN PROC 
+    
+    MOV CX,10 
+    MOV AH,2
+    MOV DL,'*'
+    
+    L:
+    INT 21H
+    ;LOOP L         ;  DEC CX -> CMP CX,0 -> JNE L 
+    DEC CX 
+    CMP CX,0
+    JNE L
+    
+    EXIT: 
+    MAIN ENDP
+END MAIN            

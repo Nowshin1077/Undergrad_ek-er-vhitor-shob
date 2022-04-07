@@ -1,0 +1,46 @@
+
+(Chapter-4)Operators:
+---------------------
+1) Arithmatic,bitwise,relational,boolean logic,assignment operator  (Just write the operator and their symbols)
+
+2) Discuss operator precedence broadly.
+Precendence: If we use +,-,x,/ together then which one will work first, we have to know this.
+
+
+(Chapter-5)Control Statements:
+------------------------------
+1) How we will write using if/else. Switch case statement(syntex).
+
+Iteration statement:
+=====================
+loop: for,while, do-while,nested for loop(syntex and what's in here).
+The for-each loop(give an example)---> new topic
+
+
+
+
+***This one is important then the other two
+
+(Chapter-6)Introducing Class:
+------------------------------
+1) How we will write names inside a class(naming convention). Discuss how to write naming convention.
+
+2) What is constructor?
+
+3) What is distructor?
+
+4) What is this keyword?
+
+5) What is Garbage collection?
+
+5) What type of work we can do inside the finalize() method.
+
+
+To make it simple make a program (do code) using constructor, this keyword, finalize().
+***Try to avoid theoritical things as much as you can. 
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+A function named setDate(long elapsedTime) that sets a new date for
+the object using the elapsed time. implement the class. Write a test program that creates two MyDate
+objects (using MyDate) andMyDate(3435555513)) and displays their year, month, and day
+(Hint: The first two constructors will extract the year, month, and day from the
+elapsed time. For example, if the elapsed time is 561555550 seconds, the year
+is 1987, the month is 9, and the day is 18.)
+4. (The MyPoint class) Design a class named MyPoint to represent a point with xand
+y-coordinates. The class contains:
+Two data fields x and y that represent the coordinates.
+A no-arg constructor that creates a point (0, 0)
+A constructor that constructs a point with specified coordinates
+Two get functions for data fields x and y, respectively
+A function named distance that returns the distance from this point to another
+point of the MyPoint type. Implement the class. Write a test program
+that creates two points (0, 0) and (10, 30.5) and displays the distance between
+them.
+5. Create an Account class to model a bank account.
+An account has the properties account
+number, balance, and annual profit rate, date created, and functions to deposit
+and withdraw. Create two derived classes for checking and saving accounts.
+A checking account has an overdraft limit, but a savings account cannot be overdrawn.
+Define a constant virtual toString) function in the Account class and
+override it in the derived classes to return the account number and balance as a
+string. Write a test program that creates objects of Account, SavingsAccount, and CheckingAccount
+andinvokes their toString) functions.

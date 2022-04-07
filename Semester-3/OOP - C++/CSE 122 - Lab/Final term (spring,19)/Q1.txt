@@ -1,0 +1,46 @@
+
+Assignment questions
+1.
+(The EvenNumber class) Define the EvenNumber class for representing an even
+number. The class contains
+A data field value of the int type that represents the integer value stored in the
+object
+A no-arg constructor that creates an EvenNumber object for the value o
+A constructor that constructs an EvenNumber object with the specified value
+A function named getValue() to return an int value for this object.
+A function named getNext) to return an EvenNumber object that represents
+the next even number after the current even number in this object.
+- A function named getPrevious() to return an EvenNumber object that represents
+the previous even number before the current even number in this object
+Implement the class. Write a test program
+that creates an EvenNumber object for value 16 and invokes the getNext) and
+getPrevious() functions to obtain and displays these numbers.
+2.
+(The Stock class) Design a class named Stock that contains the following
+A string data field named symbol for the stock's symbol.
+A string data field named name for the stock's name
+- A double data field named previousClosingPrice that stores the stock
+price for the previous day
+1 A double data field named currentPrico that stores the stock price for the
+current time
+A constructor that creates a stock with specified symbol and name.
+The constant accessor functions for all data field
+The mutator functions for previousClosingPrice and currentPrice
+A constant function named getChangePercent() that returns the percentage
+changed from previousClosingPrice to currentPrice
+Implement the class. Write a test program
+that creates a Stock object with the stock symbol MSFT, the name Microsoft Corporation
+and the previous closing price of 27.5. Set a new current price to 27.6
+and display the price-change percentage.
+(The MyDate class) Design a class named MyDate. The class contains
+3.
+The data fields year, month, and day that represent a date. month is o-based
+ie., 0 is for January
+a A no-arg constructor that creates a MyDate object for the current date
+A constructor that constructs a MyDate object with a specified elapsed time
+since midnight, January 1, 1970, in seconds
+. A constructor that constructs a MyDate object with the specified year, month,
+and day.
+Three constant get functions for the data fields year, month, and day,
+respectively
+Three set functions for the data fields year, month, and day, respectively.

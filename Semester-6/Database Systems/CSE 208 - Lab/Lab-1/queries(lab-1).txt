@@ -1,0 +1,85 @@
+Database create:
+----------------
+
+CREATE DATABASE BUBT_DB;
+
+Table-1 Create:
+---------------
+CREATE TABLE Student(Name varchar(30), ID int(5), Intake int(2), section int(2), CGPA float(3.2));
+
+Insert data into table-1:
+-------------------------
+INSERT INTO Student VALUES('Ashraful', 1, 44, 1, 3.30);
+INSERT INTO Student VALUES('Tonny', 2, 44, 1, 3.50);
+INSERT INTO Student VALUES('Zakir', 33, 35, 2, 3.98);
+INSERT INTO Student VALUES('Urmi', 6, 35, 1, 3.96);
+
+Table-2 Create:
+---------------
+CREATE TABLE Faculty(Name varchar(30), Short_code varchar(10), Course_Code varchar(18), Conduct_Semester varchar(10));
+
+
+Insert data into table-2:
+-------------------------
+INSERT INTO Faculty VALUES('farha Akter munmun','FAM','CSE 319','Summer 2019');
+INSERT INTO Faculty VALUES('Sweety Lima','SWL', 'CSE 209','Fall 2019-2020');
+INSERT INTO Faculty VALUES('Shumi Khatun','SKN','NULL','Summer 2019');
+INSERT INTO Faculty VALUES('Nadia Afrin Ritu','NULL', 'CSE 351','NULL');
+
+
+
+
+Table-3 Create:
+---------------
+CREATE TABLE Course(Course_title varchar(30), Course_Code varchar(10));
+
+
+
+Insert data into table-3:
+-------------------------
+INSERT INTO Course VALUES('Database Systems','CSE 207');
+INSERT INTO Course VALUES('Computer Networks','CSE 319');
+INSERT INTO Course VALUES('Data Communication','CSE 209');
+INSERT INTO Course VALUES('System Analysis Design', 'Null');
+
+
+Ans of the question 3:
+----------------------
+a) Q: Update the short code from faculty table whose short code is NULL.
+
+UPDATE faculty set short-code='NAF' WHERE course-code='CSE 351';
+
+
+b)Q: Update the course code that is NULL in “course” Table.
+
+UPDATE Course set Course_code='CSE 317' WHERE Course_Title='System Analysis Design';
+
+c) Q:Update the conduct semester that is NULL in “Faculty” Table.
+
+UPDATE faculty set conduct_semester='Fall 19-20' WHERE Course_Code='CSE 351';
+
+d) To add a new column named “Age” in student relation.
+
+ALTER TABLE Student ADD COLUMN Age int(2);
+
+e) Update the age of each student.
+
+UPDATE student set Age=22 WHERE ID=1;
+
+UPDATE student set Age=21 WHERE ID=2;
+
+UPDATE student set Age=23 WHERE ID=33;
+
+UPDATE student set Age=19 WHERE ID=6;
+
+f)Find the names of all Courses in the Course relation.
+
+SELECT Course_title FROM Course;
+
+g)Find the names of all teachers who has conducted  in summer 2019.
+
+SELECT Name from faculty where conduct_semester='Summer 2019';
+
+h)Find the names of all students  whose CGPA is greater than 3.50;
+
+SELECT Name from Student where CGPA>3.50;

@@ -1,0 +1,147 @@
+
+Query for The_customer_relation table:
+
+Table-1 creating:
+-----------------
+CREATE DATABASE Bank_DB;
+CREATE TABLE The_customer_relation(Customer_name varchar(30), Customer_street varchar(10), Customer_city varchar(20));
+
+
+
+Table-1 Data insertion:
+-----------------------
+
+
+INSERT into the_customer_relation VALUES('Adams','Spring','Pittsfield');
+INSERT into the_customer_relation VALUES('Brooks','Senator','Brooklyn');
+INSERT into the_customer_relation VALUES('Curry','North','Rye');
+INSERT into the_customer_relation VALUES('Glenn','Sand Hill','Woodside');
+INSERT into the_customer_relation VALUES('Green','Walnut','Stamford');
+INSERT into the_customer_relation VALUES('Hayes','Main','Harrison');
+INSERT into the_customer_relation VALUES('Johnson','Alma','Palo Alto');
+INSERT into the_customer_relation VALUES('Jones','Main','Harrison');
+INSERT into the_customer_relation VALUES('Lindsay','Park','Pittsfield');
+INSERT into the_customer_relation VALUES('Smith','North','Rye');
+INSERT into the_customer_relation VALUES('Turner','Putnam','Stamford');
+INSERT into the_customer_relation VALUES('Williams','Nassau','Princeton');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Query for The_loan_relation table:
+
+Table-2 creating:
+-----------------
+
+CREATE TABLE The_loan_relation(loan_number varchar(10), branch_name varchar(30), amount int(7));
+
+
+
+Table-2 Data insertion:
+-----------------------
+
+INSERT into the_loan_relation VALUES('L-11','Round Hill',900);
+INSERT into the_loan_relation VALUES('L-14','Downtown',1500);
+INSERT into the_loan_relation VALUES('L-15','Perryridge',1500);
+INSERT into the_loan_relation VALUES('L-16','Perryridge',1300);
+INSERT into the_loan_relation VALUES('L-17','Downtown',1000);
+INSERT into the_loan_relation VALUES('L-23','Redwood',2000);
+INSERT into the_loan_relation VALUES('L-93','Mianus',500);
+
+
+
+
+
+
+
+
+
+
+
+From the Question:
+------------------
+
+
+1) SELECT branch_name FROM the_loan_relation;
+
+
+2) SELECT Loan_number FROM the_loan_relation WHERE Branch_name='Perryridge' AND Amount>300;
+
+
+3) SELECT Loan_number FROM the_loan_relation WHERE Branch_name='Perryridge' OR Branch_name='Downtown';
+
+
+4) SELECT Loan_number FROM the_loan_relation WHERE Branch_name='Perryridge' OR Branch_name='Downtown' OR Branch_name='Mianus';
+
+Or, 
+4) SELECT Loan_number FROM the_loan_relation WHERE Branch_name IN('Perryridge', 'Downtown', 'Mianus');
+
+
+5) SELECT Customer_name FROM `the_customer_relation` WHERE customer_city NOT IN('Stamford', 'Princeton', 'Harrison');
+
+6) SELECT MAX(balance), Min(balance), AVG(balance) FROM `account`;
+
+
+***To see the full name:
+
+SELECT MAX(balance)"Maximum balance", Min(balance)"Minimum balance", AVG(balance)"Average balance" FROM `account`;
+
+
+7) SELECT COUNT(customer_name) FROM `the_customer_relation`;
+
+8)SELECT loan_number FROM `the_loan_relation` WHERE amount>= 400 AND amount<=800;
+
+9) SELECT customer_name FROM `the_customer_relation` WHERE customer_name LIKE "G%";
+
+10) SELECT customer_name FROM `the_customer_relation` WHERE customer_name LIKE "%s";
+
+11) SELECT customer_name FROM `the_customer_relation` WHERE customer_name LIKE "_o%";
+
+
+Question 1: Name consist with one "a" 
+SELECT customer_name FROM `the_customer_relation` WHERE customer_name LIKE "%a%";
+
+Question 2: Name consist with two "a" 
+SELECT customer_name FROM `the_customer_relation` WHERE customer_name LIKE "%2a%";
+
+
+
+
+
+
+Queries for table-3
+
+
+Table-3(Account) creating:
+-----------------
+
+CREATE TABLE Account(account_number varchar(10), branch_name varchar(30), balance int(7));
+
+
+
+
+
+Table-3 Data insertion:
+-----------------------
+
+INSERT into account VALUES('A-101',' Downtown', 500);
+INSERT into account VALUES('A-102',' Perryridge', 400);
+INSERT into account VALUES('A-201',' Brighton', 900);
+INSERT into account VALUES('A-215',' Mianus', 700);
+INSERT into account VALUES('A-217',' Brighton', 750);
+INSERT into account VALUES('A-222',' Redwood', 700);
+INSERT into account VALUES('A-305',' Round Hill', 350);
+
+

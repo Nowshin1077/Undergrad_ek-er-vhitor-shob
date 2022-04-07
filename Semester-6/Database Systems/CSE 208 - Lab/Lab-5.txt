@@ -1,0 +1,26 @@
+1) Select customer_name,customer_city from customer where customer_city='Harrison' order by Customer_name;
+
+2) Select customer_name from the_loan_relation,the_borrower_relation where the_loan_relation.loan_number = the_borrower_relation.loan_number AND branch_name='Perryridge' order by customer_name;
+
+3) Select customer_name,loan_number,amount from the_loan_relation,the_borrower_relation where the_loan_relation.loan_number = the_borrower_relation.loan_number;
+
+4) no need.
+
+5) SELECT distinct branch_name FROM `the_loan_relation`;
+
+6) Select loan_number,5*amount "total balance" from the_loan_relation;
+
+7) Select loan_number, amount*1.05 from the_loan_relation;
+Select loan_number, Amount*.05 from loan;
+
+8) Select loan_number, amount*1.06 from the_loan_relation where amount>1000;
+
+9) (select customer_name from the_borrower_relation) union (select customer_name from the_depositor_relation);
+
+10) (select customer_name from the_borrower_relation) intersect (select customer_name from the_depositor_relation);
+
+11) (select distinct customer-name from the_depositor_relation) except (select customer-name from the_borrower_relation );
+
+12) Delete from branch where branch_name='Perryridge';
+
+13) Delete loan_number from the_loan_relation where amount >= 1300 and amount <=1500;

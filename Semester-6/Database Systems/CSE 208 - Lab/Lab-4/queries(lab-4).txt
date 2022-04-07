@@ -1,0 +1,68 @@
+database:
+CREATE DATABASE Student_db;  
+
+Table 1:
+--------
+CREATE TABLE Student_info(ID int(5), Name varchar(10), Age int(2));
+
+data insertion:
+---------------
+INSERT INTO student_info VALUES(1,'A',19);
+INSERT INTO student_info VALUES(2,'B',21);
+INSERT INTO student_info VALUES(3,'C',23);
+
+Table 2:
+--------
+CREATE TABLE Home(ID int(5), House_no int(2));
+
+INSERT INTO home VALUES(1,12);
+INSERT INTO home VALUES(5,15);
+INSERT INTO home VALUES(7,9);
+INSERT INTO home VALUES(2,5);
+
+1)
+cartesian product:
+-------------------
+
+SELECT *FROM student_info,home;
+
+Inner join:
+-----------
+
+SELECT *FROM student_info INNER JOIN home;
+
+2)
+
+SELECT NAME FROM student_info,home WHERE student_info.ID = home.ID;
+
+to see house_no:
+----------------
+
+SELECT Name,House_no FROM student_info,home WHERE student_info.ID = home.ID;
+
+3)
+SELECT Name FROM student_info NATURAL JOIN home;
+
+to select all:
+--------------
+
+SELECT *FROM student_info NATURAL JOIN home;
+
+4)
+left outer join:
+----------------
+
+SELECT student_info.ID,Name,Age,House_no FROM student_info LEFT JOIN home ON student_info.ID= home.ID;
+
+
+5)
+right outer join:
+-----------------
+
+SELECT home.ID,Name,Age,House_no FROM student_info RIGHT JOIN home ON student_info.ID= home.ID;
+
+or,
+SELECT home.ID,Name,Age,House_no FROM student_info NATURAL RIGHT JOIN home;
+
+
+

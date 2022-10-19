@@ -1,0 +1,61 @@
+3 Modes:
+-> User mode
+-> Privilege mode
+-> Configuration mode
+
+Switch>
+Switch>en
+Switch#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+
+Switch#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#vlan 2
+Switch(config-vlan)#name cse
+Switch(config-vlan)#vlan 3
+Switch(config-vlan)#name eee
+Switch(config-vlan)#exit
+Switch(config)#exit
+Switch#
+
+Switch#
+Switch#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int fa 0/4
+Switch(config-if)#sw mo access
+Switch(config-if)#sw access vlan 2
+Switch(config-if)#int fa 0/5
+Switch(config-if)#sw mo access
+Switch(config-if)#sw access vlan 2
+Switch(config-if)#int fa 0/6
+Switch(config-if)#sw mo access
+Switch(config-if)#sw access vlan 2
+Switch(config-if)#int fa 0/7
+Switch(config-if)#sw mo access
+Switch(config-if)#sw access vlan 3
+Switch(config-if)#int fa 0/8
+Switch(config-if)#sw mo access
+Switch(config-if)#sw access vlan 3
+Switch(config-if)#int fa 0/9
+Switch(config-if)#sw mo access
+Switch(config-if)#sw access vlan 3
+Switch(config-if)#
+
+
+
+
+
+========================
+IP Address:
+
+192.168.100.1  --> start
+
+192.168.100.2
+
+
+vlan 2
+cse
+
+vlan 3
+eee

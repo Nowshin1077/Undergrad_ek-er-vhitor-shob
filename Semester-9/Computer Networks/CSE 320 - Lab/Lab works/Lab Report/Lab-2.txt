@@ -1,0 +1,99 @@
+Servers
+=========
+
+1) DNS Server 
+IP address: 192.168.100.2
+Default gateway: 192.168.100.1
+DNA Server: 192.168.100.2
+
+2) HTTP (Google) Server 
+IP address: 192.168.100.3
+Default gateway: 190.168.100.1
+DNA Server: 190.168.100.2
+
+3) HTTP (Facebook) Server
+IP address: 192.168.100.4
+Default gateway: 192.168.100.1
+DNA Server: 192.168.100.2
+
+4) SMTP(Gmail) Server 
+IP address: 192.168.100.5
+Default gateway: 190.168.100.1
+DNA Server: 190.168.100.2
+
+5) DHCP Server
+IP address: 192.168.100.10
+Default gateway: 190.168.100.1
+DNA Server: 190.168.100.2
+
+6) FTP Server
+IP address: 192.168.100.11
+Default gateway: 190.168.100.1
+DNA Server: 190.168.100.2
+
+
+7) NTP Server
+IP address: 192.168.100.12
+Default gateway: 190.168.100.1
+DNA Server: 190.168.100.2
+
+
+8) TFTP Server
+IP address: 192.168.100.13
+Default gateway: 190.168.100.1
+DNA Server: 190.168.100.2
+
+
+9) SYSLOG
+IP address: 192.168.100.14
+Default gateway: 190.168.100.1
+DNA Server: 190.168.100.2
+
+10) AAA
+IP address: 192.168.100.15
+Default gateway: 190.168.100.1
+DNA Server: 190.168.100.2
+
+client name- natasha
+Client ip- 1.0.0.1
+Secret- lab final
+
+
+
+End Device
+==========
+1) Suzan  (pass: 123)
+IP address: 192.168.100.6
+Default gateway: 192.168.100.1
+DNA Server: 192.168.100.2
+
+suzan@gmail.com
+
+
+2)Jerry (pass: 123)
+IP address: 192.168.100.7
+Default gateway: 192.168.100.1
+DNA Server: 192.168.100.2
+
+3) Emma (pass: abc) --> female
+IP address: 192.168.100.8
+Default gateway: 192.168.100.1
+DNA Server: 192.168.100.2
+
+4) Alisa (pass: 456) --> female
+IP address: 192.168.100.9
+Default gateway: 192.168.100.1
+DNA Server: 192.168.100.2
+
+
+Domain name: gmail.com
+
+
+google,fb = http server
+
+
+SMTP
+=====
+pass: 123 (male)
+
+pass: 456 (female)

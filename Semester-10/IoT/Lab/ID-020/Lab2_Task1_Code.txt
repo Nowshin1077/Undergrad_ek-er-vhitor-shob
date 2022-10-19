@@ -1,0 +1,22 @@
+#define SW1 4
+#define SW2 2
+#define LED1 12
+#define LED2 11
+
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(SW1,INPUT);
+  pinMode(SW2,INPUT);
+  pinMode(LED1,OUTPUT);
+  pinMode(LED2,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  bool sw1_state = digitalRead(SW1);
+  digitalWrite(LED1,sw1_state);
+  bool sw2_state = digitalRead(SW2);
+  digitalWrite(LED2,sw2_state);
+  
+}

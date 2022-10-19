@@ -1,0 +1,36 @@
+Semester-8 (Fall 20-21)
+==========================
+
+Mid term:
+----------
+1) Compiler Design (CSE 323)
+
+Book: Compilers(principles, techniques & tools) 2nd edition
+Chapters: 3,4
+
+Slides:
+Lexical Analyzer (4 slides)
+Syntax Analyzer (6 slides)
+
+
+2) Software Engineering (CSE 327)
+
+BooK: SOFTWARE ENGINEERING (Ninth Edition) by Ian Sommerville
+Chapters: 1(*),2(*),3(*),4(*),6
+
+BooK: Software Engineering (A practioner's approach)
+Chapters: 1,2,3,5,9(*)
+
+Slides:
+10 slides ( 5 for each books chap)
+
+3) Operating Systems (CSE 309)
+
+Book: Operating System Concepts(9th edition)
+Chapters: 1,2,3,4,5
+
+
+4) Mathematical Analysis for Computer Science (CSE 313)
+
+Book: Concrete Mathematics (Ronald L. Graham)
+Chapters: 1,2

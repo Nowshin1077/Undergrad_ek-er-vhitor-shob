@@ -1,0 +1,19 @@
+Lab Problems List:
+------------------
+
+Midterm
+========
+1) Write a C/C++/JAVA program to find pattern from a text. (naive pattern matching algorithm)
+
+2) Write a C/C++/JAVA program to test whether a given identifier is valid or not.
+
+3) Write a C/C++/JAVA program to test whether a number is valid or not.
+
+4) Write a C/C++/JAVA program to identify comment in a program.
+
+5) Design a lexical analyzer to identify all the tokens from a given block of codes.
+
+
+Final
+======
+6) Write a C/C++/JAVA program to find the FIRST and FOLLOW of a grammar.

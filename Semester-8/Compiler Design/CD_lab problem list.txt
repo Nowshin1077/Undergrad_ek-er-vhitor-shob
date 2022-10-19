@@ -1,0 +1,97 @@
+                                        Mid term
+=============================================================================
+lab-1  
+------
+Discussed about CO,PO
+
+lab-2
+------
+- Pattern finding form a text. (not counted)
+
+lab-3 (p)&
+------
+- Write a C/C++/JAVA program to test whether a given identifier is valid or not.
+
+lab-4 (p)&
+------
+- Write a C/C++/JAVA program to test whether a number is valid or not.
+
+lab-5
+------
+- Write a C/C++/JAVA program to identify comment in a program.
+
+lab-6  (p)&
+------
+- Design a lexical analyzer to identify all the tokens froma given block of codes.
+
+Input:
+\\\\\\
+int main()
+{
+float a, b=10, b2=10.5;
+a=b+b2;
+a+=b2:
+return 0;
+}                                          ---------
+                                           | Final |
+================================================================================
+lab-7
+-----
+- Write a C/C++/JAVA program to find the FIRST and FOLLOW of a grammar.
+(Have to find FIRST ---> home task)
+
+Given Grammar,
+          E -> E + T | T
+          T -> T*F | F
+          F -> (E) | id
+Soln: We have to modify this grammar first. Then we will take input from the modified grammar.
+Otherwise it will be difficult for us to find first and follow set. 
+
+
+======
+Step-1
+======
+we have to check:
+i) substitution (no)
+ii) Left recursion (yes)
+iii) Left factoring (no)
+---------------------
+Modified grammar- 
+
+E -> TE'                  
+E' -> +TE | eps        
+T -> FT'             
+T' -> *FT'| eps     
+F -> (E) | id          
+\\\\\\\\\\\\\\\
+Note: we have to remove all the spaces.
+E=TX
+X=+TX 
+X=#
+T=FY
+Y=*FY
+Y=#
+F=(E)
+F=i
+
+======
+Step-2
+======
+
+We have to take input 
+by using 2D Array.
+
+Arrar declear-> 
+We have 8 products. Row=8, Column=5 (max size)
+So we can take= 5*8 = 40 characters
+
+data [8] [5] = modified gramer
+
+
+i) Non-terminals are in "0" index always.
+ii) Array 2nd character is always "=".
+iii) We have to check Array 3rd character-> is it terminal or non-terminal.
+ 
+
+
+

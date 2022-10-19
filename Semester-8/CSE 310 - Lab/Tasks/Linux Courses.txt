@@ -1,6 +1,0 @@
-Suggested by teacher:
----------------------
-1) Linux Regex commands
-https://www.javatpoint.com/linux-tutorial
-
-Create regular expressions using meta character.

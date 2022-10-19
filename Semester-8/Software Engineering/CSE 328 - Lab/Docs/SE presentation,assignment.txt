@@ -1,0 +1,67 @@
+Diagrams
+========
+1) Use case 
+2) Activity
+3) DFD
+4) Class 
+5) ERD
+
+
+
+
+1) Plan driven process- Everything is pre-planned and fixed
+
+
+The methodology we are using for our system is
+*** Agile- Agile is an alternative to Waterfall or traditional
+sequential development.
+Agile is a structured and iterative approach of project management and 
+product development. 
+For agile process project management methodologies 
+(Scrum, Kanban, XP, and others) can be use.
+
+Scrum- SCRUM is the most widely preferred agile software development approach.
+Basically, this excellent development is suitable for those development projects 
+that are constantly altering
+Decision making lies in the hands of the team. 
+
+
+
+In short, Agile is a time-focused philosophy that allows creating a project incrementally, 
+dividing it into small pieces. One of its main benefits is the ability to adapt and change 
+at any step.
+
+
+Drawbacks:
+==========
+Agile mothodology cann't be use for big or huge projects.
+
+For this methodology customer is the first priority so project development will be as per customers requirments.
+
+
+2) The Waterfall Model: Plan driven model (phases are specified )
+There are several steps in waterfall model
+
+
+--------------------------
+Assignment-1(before mid) ***
+--------------------------
+Read system related scientific papers/research paper.
+
+How many research happend before on this system.
+
+1) Name of their system 
+2) Works happend on that system.
+3) Method used.
+4) Output/Accuracy percentage.  
+5) Limitations of the system. 
+6) Add refearence(do citation).
+
+Formal Notice:
+1)Mention the title,
+2)project methodology (tools and technology), 
+3)outcome, 
+4)drawbacks, and 
+5)further scopes for the existing system. 
+
+Group member has to do it individually.

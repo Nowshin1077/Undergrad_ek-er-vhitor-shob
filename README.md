@@ -9,7 +9,7 @@ Short overview:
 - Semester-6:  Database system lab works (MySQL), Numerical analysis lab codes (C,C++).
 - Semester-7:  Microprocessor and Microcontroller lab works (Assembly), Advanced Programming lab works (JAVA).
 - Semester-8:  Operating systems lab works (shell script, bash script), Compiler Design lab works (C,C++). 
-- Semester-9:  AI lab works (Python), Computer graphics lab works (C,C++,(opengl)), Computer Networks lab work (cisco pt).
+- Semester-9:  AI lab works (Python), Computer graphics lab(C,C++,(opengl)), Computer Networks lab work (cisco pt).
 - Semester-10: IoT lab works (Arduino C).
 - Semester-11: Neural networks lab works (Python).
 - Semester-12: Data Mining lab works (Python). 

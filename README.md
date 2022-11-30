@@ -1,5 +1,5 @@
 # Undergraduate
-Most of the materials and works during my undergrad are here as backup.
+Most of the materials and academic works during my undergrad are here in this repo.
 
 Short overview:
 - Semester-2:  Structured programming language (C) lab codes. 
